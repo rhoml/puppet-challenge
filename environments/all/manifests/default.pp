@@ -15,7 +15,7 @@ node default {
     ensure   => 'present',
     provider => 'git',
     source   => 'https://github.com/puppetlabs/exercise-webpage.git',
-    revision => 'f0880b546bdb35b796600d58eed21fdf9bc5255b',
+    revision => 'master',
     require  => Class['git'],
   }
 }
