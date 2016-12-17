@@ -7,7 +7,6 @@
 # puppet-librarian - https://github.com/rodjek/librarian-puppet
 .tmp/
 modules/
-.librarian/
 ### Ruby ###
 *.gem
 *.rbc

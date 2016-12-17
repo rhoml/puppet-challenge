@@ -1,0 +1,5 @@
+---
+nginx::nginx_vhosts:
+  localhost:
+    www_root: /var/www/default
+    listen_port: 80

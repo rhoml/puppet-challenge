@@ -68,4 +68,12 @@ Vagrant.configure("2") do |config|
   #   apt-get update
   #   apt-get install -y apache2
   # SHELL
+
+  config.vm.provision 'puppet' do |puppet|
+    puppet.working_directory = "/tmp/vagrant-puppet"
+    puppet.hiera_config_path = "hiera.yaml"
+    puppet.environment = 'all'
+    puppet.environment_path = 'environments'
+    puppet.options = "--verbose --debug"
+  end
 end
