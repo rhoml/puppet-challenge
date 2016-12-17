@@ -1,0 +1,15 @@
+-   repo: https://github.com/chriskuehl/puppet-pre-commit-hooks.git
+    sha: 4e9937d4d0ccbea37ae2a9a414a2b0cee58657fa
+    hooks:
+    -   id: puppet-lint
+    -   id: puppet-validate
+    -   id: erb-validate
+-   repo: https://github.com/pre-commit/pre-commit-hooks.git
+    sha: 96fb7fa10f2f4c11ed33482a9ad7474251e5e97f
+    hooks:
+    -   id: trailing-whitespace
+    -   id: check-yaml
+    -   id: check-json
+    -   id: check-added-large-files
+    -   id: check-merge-conflict
+    -   id: requirements-txt-fixer
